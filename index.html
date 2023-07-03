@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Biglietto del treno</title>
+</head>
+
+<body>
+    <main class="vh-100 bg-primary-subtle">
+        <div class="container text-center">
+            <h1 class="mb-3">Benvenuto!</h1>
+            <div class="row justify-content-center">
+
+                <div class="col-6">
+                    <div class="card mb-3 bg-light">
+                        <div class="card-body">
+                            <h4>Inserisci i tuoi dati:</h4>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Nome e Cognome</span>
+                                <input id="name-surname" type="text" class="form-control" placeholder=""
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Km da percorrere</span>
+                                <input id="km-to-go" type="text" class="form-control" placeholder=""
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="input-group flex-nowrap mb-3">
+                                <span class="input-group-text" id="addon-wrapping">Età</span>
+                                <input id="age-passenger" type="text" class="form-control" placeholder=""
+                                    aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="d-grid gap-2 d-md-block">
+                                <button id="btn-generate" class="btn btn-primary" type="button">Genera</button>
+                                <button id="erase" class="btn btn-primary" type="button">Annulla</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 bg-light">
+                            <div class="card-body">
+                                <h4>Dettagli:</h4>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">N°</th>
+                                            <th scope="col">Passeggero</th>
+                                            <th scope="col">Offerta</th>
+                                            <th scope="col">Carrozza</th>
+                                            <th scope="col">Codice</th>
+                                            <th scope="col">Prezzo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="number"></td>
+                                            <th id="user" scope="row"></th>
+                                            <td id="discount"></td>
+                                            <td id="random"></td>
+                                            <td id="code-random"></td>
+                                            <td id="final-price"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
